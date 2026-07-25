@@ -1,43 +1,42 @@
-# MATTBEAR Discord Portal
+# MATTBEAR Discord Den
 
-A fast, mobile-first landing page for the MATTBEAR community, public projects, and Discord access. The repository also contains the reusable Discord-style UI asset pack.
+A bright, mobile-first front door for the MATTBEAR Discord and HiberNation network.
 
-## Portal features
+## What it does
 
-- direct access to Discord, the MATTBEAR network, GitHub, and the asset library
-- searchable project links
-- keyboard shortcuts: `/` searches and `Esc` clears
-- fixed four-action mobile navigation
-- semantic HTML, visible focus states, 44px tap targets, and reduced-motion support
-- SEO metadata, Open Graph metadata, canonical URL, and basic structured data
-- no framework, build step, remote font, or runtime dependency
+- keeps every SVG icon locked to small interface sizes
+- links clearly to [MATTBEAR MAIN](https://bearicide.github.io/)
+- filters destinations by Music, Games, Community, and Code
+- supports instant search with `/` and clear with `Esc`
+- includes a restrained lighting switch saved in local storage
+- includes an interactive Idea Box prompt generator
+- uses accessible focus states, semantic headings, and 44px+ tap targets
+- respects reduced-motion preferences
 
-## Required setup
+## Discord invite
 
-Add the current Discord invite URL in `js/config.js`:
+Set the current invite in `js/config.js`:
 
 ```js
 window.MATTBEAR_PORTAL_CONFIG = {
-  discordInvite: "https://discord.gg/REPLACE-ME",
-  discordLabel: "Open Discord",
+  discordInvite: "https://discord.gg/YOUR-CODE",
+  discordLabel: "Come on in",
   discordDescription: "Join the MATTBEAR community"
 };
 ```
 
-Until configured, the Discord control remains disabled and explains exactly where the link belongs.
-
-## Asset pack
-
-- 33 original SVG icons
-- dark backgrounds and subtle patterns
-- UI fragments
-- CSS design tokens and utilities
-- searchable gallery at `preview/index.html`
+Until an invite is configured, the Discord action remains visibly disabled instead of opening a broken link.
 
 ## GitHub Pages
 
-Publish from the root of the `main` branch after merging the portal pull request. The expected public URL is:
+Publish from `main` and the repository root.
+
+Public URL:
 
 `https://bearicide.github.io/discord-/`
 
-No official Discord logo or proprietary illustration is included. Discord is a trademark of Discord Inc.
+## Asset library
+
+The original SVG asset browser remains available at `preview/`.
+
+No official Discord logo or proprietary Discord illustration is included. Discord is a trademark of Discord Inc.
