@@ -66,8 +66,9 @@
     rows.forEach(row => {
       const haystack = `${row.textContent} ${row.dataset.search || ''}`.toLowerCase();
       const categories = (row.dataset.category || '').split(/\s+/);
+      const isMainNetwork = (row.dataset.search || '').includes('main mattbear');
       const matchesText = !query || haystack.includes(query);
-      const matchesCategory = activeFilter === 'all' || categories.includes(activeFilter);
+      const matchesCategory = activeFilter === 'all' || categories.includes(activeFilter) || isMainNetwork;
       const matches = matchesText && matchesCategory;
 
       row.hidden = !matches;
