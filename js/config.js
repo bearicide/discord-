@@ -1,5 +1,5 @@
 window.MATTBEAR_PORTAL_CONFIG = {
-  discordInvite: "",
-  discordLabel: "Open Discord",
-  discordDescription: "Invite link needs configuration"
+  discordInvite: "https://discord.gg/xQcWrVRur",
+  discordLabel: "Come on in",
+  discordDescription: "Join the MATTBEAR community"
 };
