@@ -40,3 +40,23 @@ kbd{display:inline-block;min-width:1.7em;padding:.15em .4em;border:1px solid var
 @media(min-width:760px){body{padding-bottom:0}.mobile-nav{display:none}.site-header,main{padding-left:30px;padding-right:30px}.action-row,.link-list>a{padding-left:8px;padding-right:8px}}
 @media(max-width:620px){.site-header{display:block;padding-top:28px;padding-bottom:26px}.header-link{margin-top:18px}.section-heading{display:block}.search-box{margin-top:12px;width:100%}.help{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.action-row,.link-list>a{transition:none}}
+
+.site-header{
+  background:linear-gradient(90deg,#120f21 8%,#15112be8 52%,#15112b6e),
+    url(https://bearicide.github.io/bear-cave/assets/bear-cave-neon.webp) center/cover;
+  border-bottom:2px solid #aa9aff;
+}
+.site-header h1{max-width:14ch;color:#fff}
+.site-header .subtitle,.site-header .eyebrow{color:#f1eaff}
+.quick-actions .primary{
+  padding-inline:14px;
+  background:#4540ae;
+  border:1px solid #ad9fff;
+  border-radius:6px;
+}
+.quick-actions .primary:hover,.quick-actions .primary:focus-visible{
+  background:#514ac4;
+  outline:2px solid #e1d9ff;
+  outline-offset:2px;
+}
+.quick-actions .primary small{color:#f1eaff}
